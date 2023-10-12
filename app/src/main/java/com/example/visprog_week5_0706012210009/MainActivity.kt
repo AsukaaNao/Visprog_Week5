@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.visprog_week5_0706012210009.ui.theme.VisProg_Week5_0706012210009Theme
 import com.example.visprog_week5_0706012210009.ui.view.GuessNumberGame
+import com.example.visprog_week5_0706012210009.viewModel.GuessNumberViewModel
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +24,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    GuessNumberGame()
+                    GuessNumberGame(GuessNumberViewModel())
                 }
             }
         }
